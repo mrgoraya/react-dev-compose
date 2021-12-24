@@ -1,0 +1,17 @@
+{
+  "name": "react-tictactoe",
+  "dockerComposeFile": "../react-dev/docker-compose.react.yaml",
+  "service": "react-tictactoe",
+
+  "workspaceFolder": "/usr/src/app",
+
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    "abhijoybasak.nestjs-files",
+    "gruntfuggly.todo-tree"
+  ],
+
+  "shutdownAction": "none"
+}

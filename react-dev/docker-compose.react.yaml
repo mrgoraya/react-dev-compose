@@ -1,0 +1,18 @@
+services:
+  react-tictactoe:
+    build:
+      context: ../react-tictactoe
+      dockerfile: ../Dockerfile
+      args:
+        GIT_REPO_URL: https://gitlab.com/mrg5014/tic-tac-toe-react.git
+    volumes:
+      - react-tictactoe:/usr/src/app
+
+    ports:
+      - "3000:3000"
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    command: yarn start
+
+volumes:
+  react-tictactoe:
